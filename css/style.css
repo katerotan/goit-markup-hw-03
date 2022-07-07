@@ -1,0 +1,296 @@
+body {
+  font-family: 'Roboto', 'Times New Roman', sans-serif;
+  color: #757575;
+}
+
+/*--------------------------------------------Переменные палитры--------------------------------------------*/
+:root {
+  /*цвет основных фонов*/
+  --background-header: #ffffff;
+  --background-footer: #2f303a;
+  /*--background-main-color: #e5e5e5 - уже есть в body #757575;*/
+
+  /*цвет фонов отдельных блоков*/
+  --background-hero: #2f303a;
+  --background-team: #f5f4fa;
+
+  /*цвет фона кнопок*/
+  --button-background-filter: #f5f4fa;
+  --button-background-filter-hover-accent: #2196f3;
+  --button-background-order: #2196f3;
+
+  /*цвет текста лого*/
+  --logo-light: #ffffff;
+  --logo-dark: #000000;
+  --logo-accent: #2196f3;
+
+  /*цвет текста hero*/
+  --hero-title-color: #ffffff;
+
+  /*цветет текста кнопок фильтр*/
+  --button-filter-hover-accent: #ffffff;
+  --button-filter-color: #212121;
+
+  /*цвет текста кнопки Заказать услугу*/
+  --button-order-color: #ffffff;
+
+  /*цветет текста ссылок навигации*/
+  --link-hover-accent: #2196f3;
+  --link-color: #212121;
+
+  /*цветет адреса и телефона в header*/
+  --link-contacts-hover-accent: #2196f3;
+  /*--link-contact: - уже есть в body #757575;*/
+
+  /*цвет заглавий и описани*/
+  --text-title-color: #212121;
+  /*--text-descriptiom-color: #757575; - уже есть в body*/
+}
+
+/*---------------------------------------------HEADER--------------------------------------------*/
+.header {
+  background-color: var(--background-header);
+}
+/*--------ЛОГО--------*/
+.header-logo {
+  font-family: 'Raleway';
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 31px;
+  text-decoration: none;
+  color: var(--logo-dark);
+}
+
+.header-logo-accent {
+  color: var(--logo-accent);
+}
+
+/*--------НАВИГАЦИЯ--------*/
+
+/*.header-nav {} - Потушено*/
+
+.header-nav-list {
+  list-style: none;
+}
+
+/*.header-nav-item {}- Потушено*/
+
+.header-nav-link {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  text-decoration: none;
+
+  color: var(--link-color);
+}
+.current-page {
+  color: var(--link-hover-accent);
+}
+
+.header-nav-link:hover,
+.header-nav-link:focus {
+  color: var(--link-hover-accent);
+}
+
+/*-------КОНТАКТЫ--------*/
+
+.header-contacts-list {
+  list-style: none;
+}
+
+/*.header-contacts-item {} - Потушено*/
+
+.header-contacts-link {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  text-decoration: none;
+  color: inherit;
+}
+
+.header-contacts-link:hover,
+.header-contacts-link:focus {
+  color: var(--link-contacts-hover-accent);
+}
+
+/*--------------------------------------------FOOTER--------------------------------------------*/
+.footer {
+  background-color: var(--background-footer);
+}
+
+.footer-logo {
+  font-family: 'Raleway';
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 31px;
+  text-decoration: none;
+
+  color: var(--logo-light);
+}
+
+.footer-logo-accent {
+  color: var(--logo-accent);
+}
+
+.footer-address {
+  font-style: normal;
+}
+
+.footer-address-list {
+  list-style: none;
+}
+
+.footer-address-item_location {
+  font-size: 14px;
+  line-height: 24px;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+/*.footer-address-item {} - Потушено*/
+
+.footer-address-link {
+  font-size: 14px;
+  line-height: 24px;
+  color: rgba(255, 255, 255, 0.6);
+  text-decoration: none;
+}
+
+.footer-address-link:hover,
+.footer-address-link:focus {
+  color: var(--link-contacts-hover-accent);
+}
+
+/*--------------------------------------------1стр HERO--------------------------------------------*/
+.section-hero {
+  background-color: var(--background-hero);
+}
+.section-hero-title {
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 60px;
+  text-transform: uppercase;
+  color: var(--hero-title-color);
+}
+.section-hero-button {
+  font-family: inherit;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 30px;
+  color: var(--button-order-color);
+  background-color: var(--button-background-order);
+  cursor: pointer;
+}
+
+/*--------------------------------------------1стр ОСОБЕННОСТИ SPECIALS--------------------------------------------*/
+
+/*.section-specials {}- Потушено*/
+
+.section-specials-list {
+  list-style: none;
+}
+/*.section-specials-item {} - Потушено*/
+
+.section-specials-item-title {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  text-transform: uppercase;
+  color: var(--text-title-color);
+}
+.section-specials-item-description {
+  font-size: 14px;
+}
+
+/*--------------------------------------------1стр ЧЕМ МЫ ЗАНИМАЕМЯ TASKS--------------------------------------------*/
+
+/*.section-tasks {}- Потушено*/
+
+.section-tasks-title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 42px;
+  color: var(--text-title-color);
+}
+.section-tasks-list {
+  list-style: none;
+}
+/*.section-tasks-item {}- Потушено*/
+/*.section-tasks-item-img {}- Потушено*/
+
+/*--------------------------------------------1стр НАША КОМАНДА TEAM--------------------------------------------*/
+
+/*.section-team {}- Потушено*/
+
+.section-team-title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 42px;
+  color: var(--text-title-color);
+}
+
+.section-team-list {
+  list-style: none;
+}
+.section-team-item {
+  background: #ffffff;
+}
+
+/*.section-team-item-img {} - Потушено*/
+
+.section-team-name {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  color: var(--text-title-color);
+}
+
+.section-team-description {
+  line-height: 19px;
+}
+
+/*--------------------------------------------2стр ФИЛЬТРЫ FILTERS---------------------------------------------*/
+
+/*.section-filters {} - Потушено*/
+.section-filters-btn-list {
+  list-style: none;
+}
+/*.section-filters-btn-list-item {}- Потушено*/
+
+.section-filters-btn-list-btn {
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 26px;
+  color: var(--button-filter-color);
+  background-color: var(--button-background-filter);
+  cursor: pointer;
+}
+
+.section-filters-btn-list-btn:hover,
+.section-filters-btn-list-btn:focus {
+  color: var(--button-filter-hover-accent);
+  background-color: var(--button-background-filter-hover-accent);
+}
+
+/*--------------------------------------------2стр ПОРТФОЛИО PORTFOLIO--------------------------------------------*/
+
+/*.section-portfolio {}- Потушено*/
+
+.section-portfolio-list {
+  list-style: none;
+}
+.section-portfolio-item {
+  background-color: #ffffff;
+}
+/*.section-portfolio-item-img {}- Потушено*/
+
+.section-portfolio-item-title {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 36px;
+  color: #212121;
+}
+.section-portfolio-item-description {
+  line-height: 30px;
+}
