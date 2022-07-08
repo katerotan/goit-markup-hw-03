@@ -1,0 +1,218 @@
+.container {
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  outline: 2px solid tomato;
+  margin: 0 auto;
+}
+
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+  outline: 2px solid blue;
+}
+
+/*Header*/ /*ТУТ ПОКА НЕ ПОНЯТНО ЧТО С ЭТИМ ДЕЛАТЬ*/
+.header {
+}
+.header-logo {
+}
+.header-logo-accent {
+}
+.header-nav {
+}
+.header-nav-list {
+  padding: 0;
+  margin: 0;
+}
+.header-nav-item {
+  outline: 2px solid green;
+}
+.header-nav-link {
+}
+.current-page {
+}
+.header-contacts-list {
+  padding: 0;
+  margin: 0;
+}
+.header-contacts-item {
+  outline: 2px solid green;
+}
+.header-contacts-link {
+}
+
+/*Footer*/
+.footer {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.footer-logo {
+}
+.footer-logo-accent {
+}
+
+.footer-address {
+}
+.footer-address-item_location {
+  margin-top: 9px;
+  margin-bottom: 9px;
+}
+.footer-address-list {
+  padding: 0;
+  margin: 0;
+}
+.footer-address-item {
+  outline: 2px solid green;
+  margin-top: 9px;
+}
+.footer-address-link {
+}
+
+/*Studio*/
+
+.section-hero {
+  text-align: center;
+}
+.section-hero-title {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.section-hero-button {
+  margin-top: 30px;
+  display: inline-block; /*для кнопок баттон и ссылок-кнопок - обязательно*/
+  min-width: 200px;
+  height: 50px;
+  border-radius: 4px;
+  padding: 10px 32px;
+  border-width: 0px;
+  border-style: none;
+  text-align: center;
+}
+
+.section-specials {
+}
+.section-specials-list {
+  padding: 0;
+  margin: 0;
+}
+.section-specials-item {
+  display: inline-block; /*inline-block????????*/
+  width: 270px;
+  min-height: 75px;
+  padding-left: 15px;
+  padding-right: 15px;
+  outline: 2px solid green;
+}
+.section-specials-item-title {
+  margin: 0;
+  padding: 0;
+}
+.section-specials-item-description {
+  margin-top: 10px;
+  margin-bottom: 0;
+  padding: 0;
+}
+
+.section-tasks {
+  text-align: center;
+}
+.section-tasks-title {
+  margin: 0;
+  padding: 0;
+}
+.section-tasks-list {
+  margin-top: 50px;
+  margin-bottom: 0;
+  padding: 0;
+}
+.section-tasks-item {
+  display: inline-block; /*inline-block??????*/
+  outline: 2px solid green;
+}
+.section-tasks-item-img {
+}
+
+.section-team {
+  text-align: center;
+}
+.section-team-title {
+  margin: 0;
+  padding: 0;
+}
+.section-team-list {
+  padding: 0;
+  margin-top: 50px;
+  margin-bottom: 0;
+}
+.section-team-item {
+  display: inline-block; /*inline-block??????*/
+  padding-bottom: 30px;
+  outline: 2px solid green;
+}
+.section-team-item-img {
+}
+.section-team-name {
+  margin-top: 30px;
+  margin-bottom: 0;
+  padding: 0;
+}
+.section-team-description {
+  margin-top: 10px;
+  margin-bottom: 0;
+  padding: 0;
+}
+
+/*Portfolio*/
+
+.section-filters-portfolio {
+}
+.section-filters-portfolio-list {
+  list-style: none;
+  padding-inline-start: 0px;
+}
+
+.section-filters {
+}
+.section-filters-btn-list {
+  padding: 0;
+  margin: 0;
+}
+.section-filters-btn-list-item {
+  outline: 2px solid green;
+}
+.section-filters-btn-list-btn {
+  display: inline-block; /*для кнопок баттон и ссылок-кнопок - обязательно*/
+  border-radius: 4px;
+  padding: 6px 22px;
+  border-width: 0px;
+  border-style: none;
+  text-align: center;
+}
+
+.section-portfolio {
+  text-align: center;
+}
+.section-portfolio-list {
+  padding: 0;
+  margin: 0;
+}
+.section-portfolio-item {
+  display: inline-block; /*inline-block???????*/
+  padding-bottom: 20px;
+  outline: 2px solid green;
+}
+.section-portfolio-item-img {
+}
+.section-portfolio-item-title {
+  margin-top: 20px;
+  margin-bottom: 0;
+  padding: 0;
+}
+.section-portfolio-item-description {
+  margin-top: 4px;
+  margin-bottom: 0;
+  padding: 0;
+}
