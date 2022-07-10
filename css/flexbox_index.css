@@ -12,35 +12,61 @@
   outline: 2px solid blue;
 }
 
+.flex {
+  display: flex;
+  align-items: center;
+}
+
 /*Header*/ /*ТУТ ПОКА НЕ ПОНЯТНО ЧТО С ЭТИМ ДЕЛАТЬ*/
 .header {
+  border-bottom: 1px solid #ececec;
 }
 .header-logo {
+  display: block;
+  margin-right: 93px;
 }
 .header-logo-accent {
 }
+
 .header-nav {
+  justify-content: flex-start;
+  margin-right: auto;
 }
 .header-nav-list {
-  /*ВСЕ С ПОМЕТКОЙ LIST нужно сбрасывать Padding и Margin, это дизайн HTML*/
+  display: flex;
+  /*ВСЕ С ПОМЕТКОЙ LIST нужно сбрасывать Padding и Margin, это дизайн HTML для списков*/
   padding: 0;
   margin: 0;
 }
 .header-nav-item {
-  outline: 2px solid green;
+  margin-right: 50px;
 }
+.header-nav-item:last-child {
+  margin-right: 0px;
+}
+
 .header-nav-link {
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
 }
-.current-page {
-}
+
 .header-contacts-list {
+  display: flex;
   padding: 0;
   margin: 0;
 }
 .header-contacts-item {
-  outline: 2px solid green;
+  margin-right: 50px;
 }
+.header-contacts-item:last-child {
+  margin-right: 0px;
+}
+
 .header-contacts-link {
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
 }
 
 /*Footer*/
@@ -55,6 +81,7 @@
 }
 
 .footer-address {
+  margin-top: 20px;
 }
 .footer-address-item_location {
   margin-top: 9px;
@@ -65,7 +92,6 @@
   margin: 0;
 }
 .footer-address-item {
-  outline: 2px solid green;
   margin-top: 9px;
 }
 .footer-address-link {
@@ -96,16 +122,18 @@
 .section-specials {
 }
 .section-specials-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
   padding: 0;
   margin: 0;
 }
 .section-specials-item {
-  display: inline-block; /*inline-block????????*/
   width: 270px;
   min-height: 75px;
   padding-left: 15px;
   padding-right: 15px;
-  outline: 2px solid green;
 }
 .section-specials-item-title {
   margin: 0;
@@ -125,33 +153,44 @@
   padding: 0;
 }
 .section-tasks-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+
   margin-top: 50px;
   margin-bottom: 0;
   padding: 0;
 }
 .section-tasks-item {
-  display: inline-block; /*inline-block??????*/
-  outline: 2px solid green;
+  display: block;
 }
 .section-tasks-item-img {
 }
 
 .section-team {
   text-align: center;
+  background: var(--background-team);
 }
 .section-team-title {
   margin: 0;
   padding: 0;
 }
 .section-team-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
   padding: 0;
   margin-top: 50px;
   margin-bottom: 0;
 }
 .section-team-item {
-  display: inline-block; /*inline-block??????*/
+  display: block;
   padding-bottom: 30px;
-  outline: 2px solid green;
+  border-radius: 0px 0px 4px 4px;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
 }
 .section-team-item-img {
 }
@@ -178,11 +217,14 @@
 .section-filters {
 }
 .section-filters-btn-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 8px;
   padding: 0;
   margin: 0;
 }
 .section-filters-btn-list-item {
-  outline: 2px solid green;
 }
 .section-filters-btn-list-btn {
   display: inline-block; /*для кнопок баттон и ссылок-кнопок - обязательно*/
@@ -195,16 +237,30 @@
 
 .section-portfolio {
   text-align: center;
+  margin-top: 50px;
 }
 .section-portfolio-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
   padding: 0;
   margin: 0;
 }
 .section-portfolio-item {
-  display: inline-block; /*inline-block???????*/
   padding-bottom: 20px;
-  outline: 2px solid green;
+  border: 1px solid #eeeeee;
+  width: 370px;
+  margin-right: 30px;
+  margin-bottom: 30px;
 }
+
+.section-portfolio-item:nth-child(3n) {
+  margin-right: 0px;
+}
+.section-portfolio-item:nth-last-child(-n + 3) {
+  margin-bottom: 0px;
+}
+
 .section-portfolio-item-img {
 }
 .section-portfolio-item-title {
