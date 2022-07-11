@@ -461,8 +461,8 @@ body {
   background-color: #ffffff;
 
   width: 370px;
-  margin-right: 30px;
-  margin-bottom: 30px;
+  margin-right: 30px; /*отступы справа*/
+  margin-bottom: 30px; /*отступы слева*/
 }
 .section-portfolio-item:nth-child(3n) {
   margin-right: 0px;
